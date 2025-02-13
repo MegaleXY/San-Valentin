@@ -1,0 +1,103 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5ebeb;
+}
+
+.container {
+    text-align: center;
+}
+
+#gifContainerImg {
+    width: 60%;
+    height: 60%;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#siBtn,
+#noBtn {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 30px;
+    font-size: 25px;
+    margin: 50px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#siBtn {
+    background-color: #00b894;
+    border: 2px solid #fff;
+}
+
+#siBtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#noBtn {
+    background-color: #d63031;
+    border: 2px solid #fff;
+}
+
+#noBtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#noBtn span {
+    font-size: 18px;
+    color: #fcf4f4;
+}
+
+#siBtn:hover {
+    background-color: #053a03;
+}
+
+#noBtn:hover {
+    background-color: #641e0d;
+}
+
+.bg-green {
+    background-color: #ffffff;
+}
+
+#messageContainer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: #000000;
+}
+
+#question {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.3);
+    }
+}
+
