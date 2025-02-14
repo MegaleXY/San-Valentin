@@ -157,3 +157,21 @@ function showNoMessage() {
     messageIndex = (messageIndex + 1) % messages.length;
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        document.body.appendChild(heart);
+
+ 
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+
+        
+        setTimeout(() => {
+            heart.remove();
+        }, 5000);
+    }
+
+    setInterval(createHeart, 300); 
+});
