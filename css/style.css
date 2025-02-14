@@ -101,3 +101,24 @@ button {
     }
 }
 
+.heart {
+    position: fixed;
+    top: -10px;
+    font-size: 30px;
+    color: red;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    animation: fall 5s linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 0;
+    }
+}

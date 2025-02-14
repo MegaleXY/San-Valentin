@@ -121,4 +121,39 @@ document.getElementById('siBtn').addEventListener('click', function () {
 
 });
 
+// autor: MegaleXY
+const messages = [
+    "¡No escojas esto! Piensa en los ositos 😭",
+    "Dame una oportunidad... No muerdo (mucho) 🐻💕",
+    "¿Seguro? Te puede caer un meteorito 💥",
+    "Decir 'No' reduce tu suerte en un 99% 🍀",
+    "Estás rompiendo el corazón de un osito 💔",
+    "Cuidado, este botón tiene una maldición de tristeza 😭",
+    "No lo hagas... Jeff Bezos llora cada vez que alguien dice 'No' 💸",
+    "Voy a hacer puchero hasta que digas que sí 🥺",
+    "Si sigues presionando, un gatito perderá su bigote 🐱💔",
+    "Me voy a poner a dieta de chocolates si sigues así 🍫❌",
+    "Estás activando el modo 'llorar en posición fetal' 😢",
+    "¿De verdad quieres ver a un osito deprimido? 🧸😞",
+    "ERROR 404: Excusa válida para decir que no no encontrada 🖥️",
+    "Cada vez que presionas esto, un Cupido renuncia 🏹",
+    "¡Alguien deténgalo! Está a punto de cometer un error 💀",
+    "¿Quieres que te escriba una carta de renuncia al amor? 💌😢",
+    "El FBI ya está investigando esta decisión... 🚔",
+    "Se acaba de romper una galleta de la fortuna con tu futuro 💀",
+    "Voy a ponerme en huelga hasta que cambies de opinión 🚨",
+    "Si sigues así, voy a contarle a tu mamá 👀",
+];
+
+let messageIndex = 0;
+
+function showNoMessage() {
+    const messageContainer = document.getElementById("messageContainer");
+
+    messageContainer.style.display = "block";
+    messageContainer.innerHTML = messages[messageIndex];
+
+   
+    messageIndex = (messageIndex + 1) % messages.length;
+}
 
